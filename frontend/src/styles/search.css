@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1b1b1b;
+    color: #f0f0f0;
+  }
+  
+  /* Search Container */
+  .search-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 0;
+    overflow: hidden;
+    background-color: #2b2b2b;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .sidebar.open {
+    width: 250px;
+    padding: 20px;
+  }
+  
+  .sidebar-title {
+    font-size: 2em;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+  }
+  
+  .sidebar-menu li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar-menu a,
+  .sidebar-menu button {
+    color: #00ccff;
+    text-decoration: none;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-family: inherit;
+  }
+  
+  .sidebar-menu a:hover,
+  .sidebar-menu button:hover {
+    color: #ff6699;
+  }
+  
+  .logout-button {
+    font-size: 1.2em;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .sidebar.open ~ .main-content {
+    margin-left: 250px;
+  }
+  
+  .form-title {
+    font-size: 2.5em;
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .form-subtitle {
+    font-size: 1.5em;
+    color: #cccccc;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Sidebar Toggle Button */
+  .sidebar-toggle-button {
+    background: none;
+    border: none;
+    color: #00ccff;
+    font-size: 2em;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-toggle-button:hover {
+    color: #ff6699;
+  }
+  
+  /* Search Form */
+  .search-card {
+    margin-bottom: 30px;
+  }
+  
+  .search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .form-group {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffcc00;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    background-color: #2b2b2b;
+    border: 1px solid #444444;
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  
+  .form-button {
+    background-color: #00ccff;
+    border: none;
+    padding: 12px 20px;
+    color: #1b1b1b;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+    margin-top: 23px; /* Align the button with input fields */
+  }
+  
+  .form-button:hover {
+    background-color: #ff6699;
+    color: #ffffff;
+  }
+  
+  /* Car List */
+  .car-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .car-card {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border: 1px solid #444444;
+    border-radius: 8px;
+  }
+  
+  .car-card-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .car-image {
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #444444;
+  }
+  
+  .car-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .car-details h3 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #ffcc00;
+  }
+  
+  .car-details p,
+  .car-details h4 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #cccccc;
+  }
+  
+  .no-cars {
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffcc00;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    /* Sidebar adjustments for mobile */
+    .sidebar {
+      width: 0;
+      position: fixed;
+      z-index: 1000;
+    }
+  
+    .sidebar.open {
+      width: 250px;
+    }
+  
+    .main-content {
+      margin-left: 0;
+    }
+  
+    /* .sidebar.open ~ .main-content {
+      /* Optionally, you can add an overlay effect
+    } */
+   */
+    /* Adjustments for car cards */
+    .car-card-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form-button {
+      width: 100%;
+    }
+  }
+  

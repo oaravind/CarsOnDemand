@@ -1,0 +1,107 @@
+.car-owners-page {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+  background-color: #1b1b1b;
+  color: #f0f0f0;
+}
+
+.car-owners-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.car-owners-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+  border: 1px solid #444444;
+}
+
+.car-owners-table th,
+.car-owners-table td {
+  border: 1px solid #444444;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.car-owners-table th {
+  background-color: #333333;
+  color: #ffcc00;
+}
+
+.car-owners-table tr:nth-child(even) {
+  background-color: #242424;
+}
+
+.car-owners-table tr:hover {
+  background-color: #333333;
+}
+
+.car-owners-table td {
+  font-size: 14px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-button {
+  background-color: #00ccff;
+  color: #1b1b1b;
+}
+
+.delete-button {
+  background-color: #ff6699;
+  color: #ffffff;
+}
+
+.edit-button:hover {
+  background-color: #0099cc;
+}
+
+.delete-button:hover {
+  background-color: #cc3366;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 300px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #444444;
+  border-radius: 4px;
+  background-color: #1b1b1b;
+  color: #f0f0f0;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  background-color: #00ccff;
+  color: #1b1b1b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0099cc;
+  color: #ffffff;
+}
